@@ -1,0 +1,12 @@
+SELECT last_name FROM employees WHERE department_id = {SELECT department_id FROM departments WHERE department_id = 110}
+
+SELECT * FROM employees JOIN departments USING department_id JOIN locations USING location_id WHERE location_id =
+{SELECT location_id FROM locations JOIN departments USING location_id JOIN employees USING department_id WHERE first_name LIKE 'Steven' AND last_name LIKE 'King'}
+
+SELECT last_name, phone_number, email FROM employees JOIN departments USING department_id WHERE department_id IN [60,70,80,90]
+
+SELECT street_address, postal_code, city, country_id FROM locations WHERE country_id LIKE 'US'
+
+SELECT last_name, first_name, salary FROM employees WHERE salary > 5000 AND salary < 10000 OR salary = 24000 OR salary BETWEEN 16000 AND 18000
+
+SELECT city, COUNT(employee_id) AVG(salary) FROM employees JOIN departments USING department_id JOIN locations USING location_id GROUP BY city HAVING AVG(salary) > 5000
