@@ -1,7 +1,47 @@
 # SQL-To-Mongo-Translator
 
-<img src="https://i.ibb.co/kDm0kJq/Translator.png" alt="Screenshot" width="100%">
+<img src="https://i.ibb.co/YjDnxmw/Translator.png" alt="Screenshot" width="100%">
+Translation:
 
+```
+{
+  $lookup: {
+    from: "departments",
+    localField: "department_id",
+    foreignField: "department_id",
+    as: "departments"
+  }
+},
+{ $unwind: "$departments" },
+{
+  $lookup: {
+    from: "locations",
+    localField: "departments.location_id",
+    foreignField: "location_id",
+    as: "locations"
+  }
+},
+{ $unwind: "$locations" },
+{
+ $group: {
+    _id: {city: "$locations.city"},
+    countemployee_id: { $sum: 1 },
+    avgsalary: { $avg: "$salary" }
+  }
+},
+{
+ $match: {
+    avgsalary: { $gt: 5000 }
+  }
+},
+{ $project: {
+    city: "$_id.city",
+    countemployee_id: 1,
+    avgsalary: 1,
+    _id: 0
+  }
+}
+```
 ## Table of Contents
 
 - [Introduction](#introduction)
