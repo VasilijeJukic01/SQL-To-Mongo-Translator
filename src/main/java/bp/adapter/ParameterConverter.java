@@ -1,10 +1,10 @@
-package main.java.bp.adapter;
+package bp.adapter;
 
-import main.java.bp.adapter.builder.Builder;
-import main.java.bp.adapter.builder.ConditionBuilder;
-import main.java.bp.parser.SQLQuery;
-import main.java.bp.parser.clauses.*;
-import main.java.bp.parser.conditions.Condition;
+import bp.adapter.builder.Builder;
+import bp.adapter.builder.ConditionBuilder;
+import bp.parser.SQLQuery;
+import bp.parser.clauses.*;
+import bp.parser.conditions.Condition;
 
 import java.util.ArrayList;
 import java.util.List;

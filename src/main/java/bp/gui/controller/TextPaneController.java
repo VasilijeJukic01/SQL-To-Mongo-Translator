@@ -1,11 +1,11 @@
-package main.java.bp.gui.controller;
+package bp.gui.controller;
 
 import javax.swing.*;
 import javax.swing.text.*;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
-import static main.java.bp.constants.Constants.*;
+import static bp.constants.Constants.*;
 
 public final class TextPaneController {
 

@@ -1,6 +1,6 @@
-package main.java.bp.parser;
+package bp.parser;
 
-import main.java.bp.parser.clauses.Clause;
+import bp.parser.clauses.Clause;
 
 import java.util.ArrayList;
 import java.util.List;

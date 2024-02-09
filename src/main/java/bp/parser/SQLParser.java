@@ -1,7 +1,7 @@
-package main.java.bp.parser;
+package bp.parser;
 
-import main.java.bp.parser.clauses.*;
-import main.java.bp.parser.factory.Factory;
+import bp.parser.clauses.*;
+import bp.parser.factory.Factory;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -37,7 +37,7 @@ public class SQLParser implements Parser<Query<Clause>> {
             }
             // Parameters
             else {
-                if (query.getClauses().size() == 0) return null;
+                if (query.getClauses().isEmpty()) return null;
                 Clause lastClause = query.getClauses().get(query.getClauses().size() - 1);
                 if (lastClause instanceof SelectClause) {
                     if (part.equals("DISTINCT")) ((SelectClause) lastClause).setDistinct(true);

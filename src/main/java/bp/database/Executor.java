@@ -1,15 +1,15 @@
-package main.java.bp.database;
+package bp.database;
 
+import bp.database.controller.DBController;
+import bp.database.data.Row;
 import com.mongodb.client.*;
-import main.java.bp.adapter.MongoQuery;
-import main.java.bp.database.controller.DBController;
-import main.java.bp.database.data.Row;
+import bp.adapter.MongoQuery;
 import org.bson.Document;
 
 import java.util.*;
 
-import static main.java.bp.constants.Constants.MONGO_DATABASE;
-import static main.java.bp.constants.Constants.MONGO_URI;
+import static bp.constants.Constants.MONGO_DATABASE;
+import static bp.constants.Constants.MONGO_URI;
 
 public class Executor implements Database {
 

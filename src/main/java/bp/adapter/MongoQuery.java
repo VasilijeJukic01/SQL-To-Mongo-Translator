@@ -1,4 +1,4 @@
-package main.java.bp.adapter;
+package bp.adapter;
 
 import org.bson.Document;
 

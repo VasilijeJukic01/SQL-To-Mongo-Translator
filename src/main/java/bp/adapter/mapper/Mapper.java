@@ -1,4 +1,4 @@
-package main.java.bp.adapter.mapper;
+package bp.adapter.mapper;
 
 public interface Mapper {
 

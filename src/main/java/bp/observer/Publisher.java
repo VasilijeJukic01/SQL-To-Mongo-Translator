@@ -1,4 +1,4 @@
-package main.java.bp.observer;
+package bp.observer;
 
 public interface Publisher {
 

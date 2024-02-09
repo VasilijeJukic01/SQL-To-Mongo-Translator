@@ -1,10 +1,10 @@
-package main.java.bp.database.controller;
+package bp.database.controller;
 
 import com.mongodb.*;
 import com.mongodb.client.MongoClient;
 import com.mongodb.client.MongoClients;
 
-import static main.java.bp.constants.Constants.MONGO_URI;
+import static bp.constants.Constants.MONGO_URI;
 
 public class DBController {
 

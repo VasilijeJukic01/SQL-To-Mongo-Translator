@@ -1,10 +1,10 @@
-package main.java.bp.adapter;
+package bp.adapter;
 
-import main.java.bp.adapter.mapper.Mapper;
-import main.java.bp.adapter.mapper.MapperImplementation;
-import main.java.bp.parser.Query;
-import main.java.bp.parser.SQLQuery;
-import main.java.bp.parser.clauses.Clause;
+import bp.adapter.mapper.Mapper;
+import bp.adapter.mapper.MapperImplementation;
+import bp.parser.Query;
+import bp.parser.SQLQuery;
+import bp.parser.clauses.Clause;
 
 public class MongoAdapter implements Adapter {
 

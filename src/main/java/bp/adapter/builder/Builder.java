@@ -1,4 +1,4 @@
-package main.java.bp.adapter.builder;
+package bp.adapter.builder;
 
 public interface Builder<U, V> {
 

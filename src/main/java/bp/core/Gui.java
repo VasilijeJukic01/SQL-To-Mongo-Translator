@@ -1,4 +1,4 @@
-package main.java.bp.core;
+package bp.core;
 
 public interface Gui {
 

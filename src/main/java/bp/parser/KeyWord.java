@@ -1,4 +1,4 @@
-package main.java.bp.parser;
+package bp.parser;
 
 public enum KeyWord {
     SELECT,  // 0

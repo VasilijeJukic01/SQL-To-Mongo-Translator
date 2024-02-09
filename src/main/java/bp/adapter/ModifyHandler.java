@@ -1,6 +1,6 @@
-package main.java.bp.adapter;
+package bp.adapter;
 
-import main.java.bp.core.AppFramework;
+import bp.core.AppFramework;
 
 import java.util.HashMap;
 import java.util.List;

@@ -1,7 +1,7 @@
-package main.java.bp.parser.factory;
+package bp.parser.factory;
 
 
-import main.java.bp.parser.clauses.*;
+import bp.parser.clauses.*;
 
 import java.util.HashMap;
 import java.util.Map;

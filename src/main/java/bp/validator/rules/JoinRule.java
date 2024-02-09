@@ -1,10 +1,10 @@
-package main.java.bp.validator.rules;
+package bp.validator.rules;
 
-import main.java.bp.parser.Query;
-import main.java.bp.parser.clauses.Clause;
-import main.java.bp.parser.clauses.JoinClause;
-import main.java.bp.parser.clauses.OnClause;
-import main.java.bp.parser.clauses.UsingClause;
+import bp.parser.Query;
+import bp.parser.clauses.Clause;
+import bp.parser.clauses.JoinClause;
+import bp.parser.clauses.OnClause;
+import bp.parser.clauses.UsingClause;
 
 public class JoinRule extends Rule {
 

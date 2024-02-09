@@ -1,4 +1,4 @@
-package main.java.bp.constants;
+package bp.constants;
 
 import java.awt.*;
 

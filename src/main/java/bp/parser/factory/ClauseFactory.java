@@ -1,6 +1,6 @@
-package main.java.bp.parser.factory;
+package bp.parser.factory;
 
-import main.java.bp.parser.clauses.Clause;
+import bp.parser.clauses.Clause;
 
 public class ClauseFactory implements AbstractFactory<Clause> {
 

@@ -1,4 +1,4 @@
-package main.java.bp.parser;
+package bp.parser;
 
 import java.util.List;
 

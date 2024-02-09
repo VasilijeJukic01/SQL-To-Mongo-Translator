@@ -1,14 +1,14 @@
-package main.java.bp.gui.view;
+package bp.gui.view;
 
-import main.java.bp.core.AppFramework;
-import main.java.bp.gui.controller.RunController;
-import main.java.bp.gui.controller.TextPaneController;
+import bp.core.AppFramework;
+import bp.gui.controller.RunController;
+import bp.gui.controller.TextPaneController;
 
 import javax.swing.*;
 import javax.swing.table.DefaultTableCellRenderer;
 import java.awt.*;
 
-import static main.java.bp.constants.Constants.*;
+import static bp.constants.Constants.*;
 
 @SuppressWarnings("FieldCanBeLocal")
 public class MainFrame extends JFrame {

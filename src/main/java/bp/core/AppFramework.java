@@ -1,16 +1,16 @@
-package main.java.bp.core;
+package bp.core;
 
-import main.java.bp.adapter.Adapter;
-import main.java.bp.adapter.MongoAdapter;
-import main.java.bp.database.Database;
-import main.java.bp.database.Executor;
-import main.java.bp.gui.view.DataTableModel;
-import main.java.bp.parser.Parser;
-import main.java.bp.parser.Query;
-import main.java.bp.parser.SQLParser;
-import main.java.bp.parser.clauses.Clause;
-import main.java.bp.validator.SQLValidator;
-import main.java.bp.validator.Validator;
+import bp.adapter.Adapter;
+import bp.adapter.MongoAdapter;
+import bp.database.Database;
+import bp.database.Executor;
+import bp.gui.view.DataTableModel;
+import bp.parser.Parser;
+import bp.parser.Query;
+import bp.parser.SQLParser;
+import bp.parser.clauses.Clause;
+import bp.validator.SQLValidator;
+import bp.validator.Validator;
 
 import java.util.HashMap;
 import java.util.List;

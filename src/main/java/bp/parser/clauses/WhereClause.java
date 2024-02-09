@@ -1,9 +1,9 @@
-package main.java.bp.parser.clauses;
+package bp.parser.clauses;
 
-import main.java.bp.core.AppFramework;
-import main.java.bp.parser.KeyWord;
-import main.java.bp.parser.Query;
-import main.java.bp.parser.conditions.Condition;
+import bp.core.AppFramework;
+import bp.parser.KeyWord;
+import bp.parser.Query;
+import bp.parser.conditions.Condition;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -26,13 +26,18 @@ public class WhereClause extends Clause {
     }
 
     public Query<Clause> buildSubQuery() {
+        String subQuery = getSubQueryString();
+        return AppFramework.getAppFramework().getParser().parse(subQuery);
+    }
+
+    public String getSubQueryString() {
         StringBuilder sb = new StringBuilder();
         for (int i = 2; i < args.size(); i++) {
             sb.append(args.get(i).replaceAll(",", "").replace("{", "").replace("}","")
                     .replace("FROM", "JOIN").replace("SELECT", "USING"));
             sb.append(" ");
         }
-        return AppFramework.getAppFramework().getParser().parse(sb.toString());
+        return sb.toString();
     }
 
     @Override
@@ -50,12 +55,12 @@ public class WhereClause extends Clause {
                 continue;
             }
 
-            if (c.getLeftOperand().equals("") || c.getLeftOperand() == null) c.setLeftOperand(arg);
-            else if (c.getRightOperand().equals("") || c.getRightOperand() == null) c.setRightOperand(arg);
+            if (c.getLeftOperand().isEmpty() || c.getLeftOperand() == null) c.setLeftOperand(arg);
+            else if (c.getRightOperand().isEmpty() || c.getRightOperand() == null) c.setRightOperand(arg);
 
             if (c.getRightOperand().contains("NOT")) c.setRightOperand(c.getRightOperand().replace("NOT", "NOT "+arg));
         }
-        if (!c.getLeftOperand().equals("")) conditions.add(c);
+        if (!c.getLeftOperand().isEmpty()) conditions.add(c);
     }
 
     public List<String> getArgs() {

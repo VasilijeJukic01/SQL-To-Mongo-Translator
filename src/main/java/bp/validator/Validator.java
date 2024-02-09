@@ -1,6 +1,6 @@
-package main.java.bp.validator;
+package bp.validator;
 
-import main.java.bp.observer.Publisher;
+import bp.observer.Publisher;
 
 public interface Validator<T> extends Publisher {
 

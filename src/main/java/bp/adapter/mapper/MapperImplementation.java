@@ -1,8 +1,7 @@
-package main.java.bp.adapter.mapper;
+package bp.adapter.mapper;
 
-
-import main.java.bp.adapter.MongoQuery;
-import main.java.bp.core.AppFramework;
+import bp.adapter.MongoQuery;
+import bp.core.AppFramework;
 import org.bson.Document;
 
 import java.util.ArrayList;

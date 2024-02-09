@@ -1,4 +1,4 @@
-package main.java.bp.parser.factory;
+package bp.parser.factory;
 
 public interface AbstractFactory<T> {
 

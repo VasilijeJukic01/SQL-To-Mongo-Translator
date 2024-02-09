@@ -1,9 +1,9 @@
-package main.java.bp.validator;
+package bp.validator;
 
-import main.java.bp.observer.Subscriber;
-import main.java.bp.parser.Query;
-import main.java.bp.parser.clauses.Clause;
-import main.java.bp.validator.rules.*;
+import bp.observer.Subscriber;
+import bp.parser.Query;
+import bp.parser.clauses.Clause;
+import bp.validator.rules.*;
 
 import java.util.ArrayList;
 import java.util.List;

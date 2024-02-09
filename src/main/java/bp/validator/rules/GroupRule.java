@@ -1,9 +1,9 @@
-package main.java.bp.validator.rules;
+package bp.validator.rules;
 
-import main.java.bp.parser.Query;
-import main.java.bp.parser.clauses.Clause;
-import main.java.bp.parser.clauses.GroupClause;
-import main.java.bp.parser.clauses.SelectClause;
+import bp.parser.Query;
+import bp.parser.clauses.Clause;
+import bp.parser.clauses.GroupClause;
+import bp.parser.clauses.SelectClause;
 
 public class GroupRule extends Rule {
 
@@ -17,6 +17,10 @@ public class GroupRule extends Rule {
 
     @Override
     public boolean check(Query<Clause> query) {
+        if (query == null) {
+            super.message = "Query is empty";
+            return true;
+        }
         GroupClause groupClause = null;
         for (Clause c : query.getClauses()) {
             if(c instanceof GroupClause){
@@ -32,6 +36,7 @@ public class GroupRule extends Rule {
                         return false;
                     }
                 }
+                super.message = "";
                 return true;
             }
         }

@@ -1,9 +1,9 @@
-package main.java.bp.validator.rules;
+package bp.validator.rules;
 
-import main.java.bp.parser.Query;
-import main.java.bp.parser.clauses.Clause;
-import main.java.bp.parser.clauses.FromClause;
-import main.java.bp.parser.clauses.SelectClause;
+import bp.parser.Query;
+import bp.parser.clauses.Clause;
+import bp.parser.clauses.FromClause;
+import bp.parser.clauses.SelectClause;
 
 public class MandatoryRule extends Rule {
 
@@ -31,6 +31,7 @@ public class MandatoryRule extends Rule {
             else if(c instanceof FromClause) from = true;
 
             if (select && from) return true;
+            super.message = "";
         }
 
         prepareMessage(select, from);

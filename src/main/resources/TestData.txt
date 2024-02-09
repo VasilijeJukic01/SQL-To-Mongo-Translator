@@ -9,4 +9,4 @@ SELECT street_address, postal_code, city, country_id FROM locations WHERE countr
 
 SELECT last_name, first_name, salary FROM employees WHERE salary > 5000 AND salary < 10000 OR salary = 24000 OR salary BETWEEN 16000 AND 18000
 
-SELECT city, COUNT(employee_id) AVG(salary) FROM employees JOIN departments USING department_id JOIN locations USING location_id GROUP BY city HAVING AVG(salary) > 5000
+SELECT city, COUNT(employee_id), AVG(salary) FROM employees JOIN departments USING department_id JOIN locations USING location_id GROUP BY city HAVING AVG(salary) > 5000

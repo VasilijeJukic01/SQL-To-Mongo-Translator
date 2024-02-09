@@ -1,7 +1,7 @@
-package main.java.bp.parser.clauses;
+package bp.parser.clauses;
 
-import main.java.bp.parser.KeyWord;
-import main.java.bp.parser.conditions.Condition;
+import bp.parser.KeyWord;
+import bp.parser.conditions.Condition;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -20,13 +20,13 @@ public class OnClause extends Clause {
     public void build() {
         this.condition = new Condition();
         for (String arg : args) {
-            if (condition.getLeftOperand().equals("")) {
+            if (condition.getLeftOperand().isEmpty()) {
                 condition.setLeftOperand(arg);
             }
-            else if (condition.getOperator().equals("")) {
+            else if (condition.getOperator().isEmpty()) {
                 condition.setOperator(arg);
             }
-            else if (condition.getRightOperand().equals("")) {
+            else if (condition.getRightOperand().isEmpty()) {
                 condition.setRightOperand(arg);
             }
         }

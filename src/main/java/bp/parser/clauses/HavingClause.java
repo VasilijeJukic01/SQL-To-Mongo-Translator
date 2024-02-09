@@ -1,7 +1,7 @@
-package main.java.bp.parser.clauses;
+package bp.parser.clauses;
 
-import main.java.bp.parser.KeyWord;
-import main.java.bp.parser.conditions.Condition;
+import bp.parser.KeyWord;
+import bp.parser.conditions.Condition;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -31,16 +31,16 @@ public class HavingClause extends Clause {
                 continue;
             }
 
-            if (c.getLeftOperand().equals("")) buildLeftOperand(arg, c);
-            else if(c.getOperator().equals("")) c.setOperator(arg);
-            else if (c.getRightOperand().equals("")) buildRightOperand(arg, c);
+            if (c.getLeftOperand().isEmpty()) buildLeftOperand(arg, c);
+            else if(c.getOperator().isEmpty()) c.setOperator(arg);
+            else if (c.getRightOperand().isEmpty()) buildRightOperand(arg, c);
         }
 
-        if (!c.getLeftOperand().equals("")) conditions.add(c);
+        if (!c.getLeftOperand().isEmpty()) conditions.add(c);
     }
 
     private void buildLeftOperand(String arg, Condition c) {
-        if(!check(arg).equals("")) {
+        if(!check(arg).isEmpty()) {
             if (check(arg).equals("COUNT")) c.setLeftOperand(arg.substring(6, arg.length() - 1));
             else c.setLeftOperand(check(arg)+arg.substring(4, arg.length() - 1));
         }
@@ -48,7 +48,7 @@ public class HavingClause extends Clause {
     }
 
     private void buildRightOperand(String arg, Condition c) {
-        if(!check(arg).equals("")) {
+        if(!check(arg).isEmpty()) {
             if (check(arg).equals("COUNT")) c.setRightOperand(arg.substring(6, arg.length() - 1));
             else c.setRightOperand(check(arg)+arg.substring(4, arg.length() - 1));
         }

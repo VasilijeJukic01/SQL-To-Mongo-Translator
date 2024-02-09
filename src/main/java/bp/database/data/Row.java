@@ -1,4 +1,4 @@
-package main.java.bp.database.data;
+package bp.database.data;
 
 import java.util.HashMap;
 import java.util.Map;

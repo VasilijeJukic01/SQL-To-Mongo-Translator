@@ -1,10 +1,10 @@
-package main.java.bp.validator.rules;
+package bp.validator.rules;
 
-import main.java.bp.core.AppFramework;
-import main.java.bp.parser.Query;
-import main.java.bp.parser.clauses.Clause;
-import main.java.bp.parser.clauses.FromClause;
-import main.java.bp.parser.clauses.JoinClause;
+import bp.core.AppFramework;
+import bp.parser.Query;
+import bp.parser.clauses.Clause;
+import bp.parser.clauses.FromClause;
+import bp.parser.clauses.JoinClause;
 
 import java.util.HashMap;
 import java.util.List;

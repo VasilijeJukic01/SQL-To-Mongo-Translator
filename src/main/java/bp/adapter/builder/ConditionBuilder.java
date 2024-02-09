@@ -1,6 +1,6 @@
-package main.java.bp.adapter.builder;
+package bp.adapter.builder;
 
-import main.java.bp.parser.conditions.Condition;
+import bp.parser.conditions.Condition;
 
 public class ConditionBuilder implements Builder<String, Condition> {
 

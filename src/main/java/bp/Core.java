@@ -1,8 +1,8 @@
-package main.java.bp;
+package bp;
 
-import main.java.bp.core.AppFramework;
-import main.java.bp.core.Gui;
-import main.java.bp.gui.SwingGui;
+import bp.core.AppFramework;
+import bp.core.Gui;
+import bp.gui.SwingGui;
 
 public class Core {
 

@@ -1,9 +1,9 @@
-package main.java.bp.gui.view;
+package bp.gui.view;
 
-import main.java.bp.observer.Subscriber;
-import main.java.bp.parser.Query;
-import main.java.bp.parser.clauses.Clause;
-import main.java.bp.validator.Validator;
+import bp.observer.Subscriber;
+import bp.parser.Query;
+import bp.parser.clauses.Clause;
+import bp.validator.Validator;
 
 import javax.swing.*;
 import java.awt.*;

@@ -1,6 +1,6 @@
-package main.java.bp.database;
+package bp.database;
 
-import main.java.bp.database.data.Row;
+import bp.database.data.Row;
 
 import java.util.HashMap;
 import java.util.List;

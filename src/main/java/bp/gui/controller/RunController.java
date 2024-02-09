@@ -1,14 +1,14 @@
-package main.java.bp.gui.controller;
+package bp.gui.controller;
 
-import main.java.bp.adapter.Adapter;
-import main.java.bp.adapter.MongoAdapter;
-import main.java.bp.adapter.MongoQuery;
-import main.java.bp.core.AppFramework;
-import main.java.bp.database.Executor;
-import main.java.bp.gui.view.MainFrame;
-import main.java.bp.parser.Query;
-import main.java.bp.parser.clauses.Clause;
-import main.java.bp.validator.Validator;
+import bp.adapter.Adapter;
+import bp.adapter.MongoAdapter;
+import bp.adapter.MongoQuery;
+import bp.core.AppFramework;
+import bp.database.Executor;
+import bp.gui.view.MainFrame;
+import bp.parser.Query;
+import bp.parser.clauses.Clause;
+import bp.validator.Validator;
 
 import javax.swing.*;
 import java.awt.event.ActionEvent;

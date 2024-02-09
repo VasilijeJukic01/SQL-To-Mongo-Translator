@@ -1,7 +1,7 @@
-package main.java.bp.validator.rules;
+package bp.validator.rules;
 
-import main.java.bp.parser.Query;
-import main.java.bp.parser.clauses.Clause;
+import bp.parser.Query;
+import bp.parser.clauses.Clause;
 
 public abstract class Rule {
 

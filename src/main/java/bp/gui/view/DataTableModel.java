@@ -1,6 +1,6 @@
-package main.java.bp.gui.view;
+package bp.gui.view;
 
-import main.java.bp.database.data.Row;
+import bp.database.data.Row;
 
 import javax.swing.table.DefaultTableModel;
 import java.util.List;
@@ -12,7 +12,7 @@ public class DataTableModel extends DefaultTableModel {
     private List<Row> rows;
 
     private void updateModel(){
-        if (rows.size() == 0) return;
+        if (rows.isEmpty()) return;
 
         int columnCount = rows.get(0).getFields().keySet().size();
         Vector columnVector = DefaultTableModel.convertToVector(rows.get(0).getFields().keySet().toArray());

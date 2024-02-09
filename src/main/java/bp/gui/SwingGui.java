@@ -1,7 +1,7 @@
-package main.java.bp.gui;
+package bp.gui;
 
-import main.java.bp.core.Gui;
-import main.java.bp.gui.view.MainFrame;
+import bp.core.Gui;
+import bp.gui.view.MainFrame;
 
 public class SwingGui implements Gui {
 
